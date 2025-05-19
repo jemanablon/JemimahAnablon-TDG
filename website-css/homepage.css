@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-image: url(../images/elementor-placeholder-image.png);
 }
 
 .navbar {
@@ -97,7 +98,7 @@ body {
 }
  .restaurant{
   padding-top: 170px;
-  font-size: 90px;
+  font-size: 100px;
   text-align: center;
   margin-bottom: 0px;
  
@@ -105,4 +106,10 @@ body {
 } .location{
  text-align: center;
  font-size:30px;
+ margin: 0%;
+}
+.star{
+  width: 240px;
+  margin-left: 42%;
+  margin-top: 1%;
 }

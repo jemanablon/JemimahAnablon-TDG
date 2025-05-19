@@ -1,0 +1,105 @@
+ body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/elementor-placeholder-image.png);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+.menu-icon{
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon .line {
+  width: 35px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.4s ease;
+}
+
+.menu-overlay.open {
+  right: 0;
+}
+
+.close-icon {
+  display: none;
+}
+
+.menu-overlay.open ~ .menu-icon {
+  display: none;
+}
+
+.menu-overlay.open ~ .close-icon {
+  display: flex;
+}
+
+.menu-overlay ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-overlay ul li {
+  margin: 15px 0;
+}
+
+.menu-overlay ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+.reservation-botton{
+  display: inline-block;
+  margin: 30px;
+}
+.reservation {
+    position: absolute;
+    right: 2rem;
+    font-size: 20px;
+    transform: translateY(-50%);
+    margin-top: 50px;
+}
+.page-content{
+    font-size: 25px;
+    text-align: center;
+    width: 90%;
+    margin-left: 60px;
+    margin-top: 15%;
+}
