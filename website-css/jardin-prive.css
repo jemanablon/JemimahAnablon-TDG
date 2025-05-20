@@ -8,7 +8,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    position: relative;
+    z-index: 100;
 }
+
 
 .logo {
     font-size: 30px;
@@ -58,6 +61,10 @@ body {
 
 .close-icon {
   display: none;
+    z-index: 1001;
+}
+.menu-overlay{
+  z-index: 900;
 }
 
 .menu-overlay.open ~ .menu-icon {
@@ -94,4 +101,79 @@ body {
     font-size: 20px;
     transform: translateY(-50%);
     margin-top: 50px;
+}
+*{
+  box-sizing: border-box;
+}
+.container{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+.sliderBox{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  object-fit: cover;
+  z-index: 0;
+}
+.sliderBox img{
+  position: absolute;
+  z-index: 0;
+}
+@keyframes fade{
+  from{
+    opacity: .4;
+  }
+  to{
+    opacity: 1;
+  }
+}
+img{
+  width: 100%;
+  height: 100%;
+}
+.prev,
+.next{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: auto;
+  font-size: 38px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  z-index: 10;
+  transition: .6s ease;
+  padding: 10px;
+}
+.prev{
+  left: 20px;
+}
+.next{
+}
+.dotsWrap{
+  position: absolute;
+  width: 100%;
+  bottom: 50px;
+  text-align: center;
+}
+.dot{
+  display: inline-block;
+  background: #bbb;
+  width: 20px;
+  height: 20px;
+  margin: 0 7px;
+  border-radius: 50%;
+  border: 2px solid #ffff;
+  z-index: 10;
+  cursor: pointer;
+}
+.dot.active,
+.dot:hover{
+  background: #535353;
 }

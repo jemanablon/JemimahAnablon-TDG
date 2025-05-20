@@ -95,3 +95,17 @@ body {
     transform: translateY(-50%);
     margin-top: 50px;
 }
+.split-screen{
+  display: flex;
+  height: 100vh;
+}
+.left, .right{
+  flex:1;
+  padding: 20px;
+}
+.left{
+  background-image: url(../images/elementor-placeholder-image.png);
+}
+.right{
+  background-image: url(../images/elementor-placeholder-image.png);
+}
