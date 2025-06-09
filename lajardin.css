@@ -1,66 +1,115 @@
-:root{
-    --gold-crayola: hsl(38, 61%, 73%);
---quick-silver: hsla(0, 0%, 65%, 1);
---davys-grey: hsla(30, 3%, 34%, 1);
---smoky-black-1: hsla(40, 12%, 5%, 1);
---smoky-black-2: hsla(30, 8%, 5%, 1);
---smoky-black-3: hsla(0, 3%, 7%, 1);
---eerie-black-1: hsla(210, 4%, 9%, 1);
---eerie-black-2: hsla(210, 4%, 11%, 1);
---eerie-black-3: hsla(180, 2%, 8%, 1);
---eerie-black-4: hsla(0, 0%, 13%, 1);
---white: hsla(0, 0%, 100%, 1);
---white-alpha-20: hsla(0, 0%, 100%, 0.2);
---white-alpha-10: hsla(0, 0%, 100%, 0.1);
---black: hsla(0, 0%, 0%, 1);
---black-alpha-80: hsla(0, 0%, 0%, 0.8);
---black-alpha-15: hsla(0, 0%, 0%, 0.15); 
-
---loading-text-gradient: linear-gradient(90deg, transparent 0% 16.66%, var(--smoky-black-3) 33.33% 50%,  transparent 66.66% 75%);
---gradient-1: linear-gradient(to top,hsla(0, 0%, 0%, 0.9),hsla(0, 0%, 0%, 0.7),transparent);
-
---fontFamily-forum: 'Forum', cursive;
---fontFamily-dm_sans: 'DM Sans', sans-serif;
-
---fontSize-display-1: calc(1.3rem + 6.7vw);
---fontSize-headline-1: calc(2rem + 2.5vw);
---fontSize-headline-2: calc(1.3rem + 2.4vw);
---fontSize-title-1: calc(1.6rem + 1.2vw);
---fontSize-title-2: 2.2rem;
---fontSize-title-3: 2.1rem;
---fontSize-title-4: calc(1.6rem + 1.2vw);
---fontSize-body-1: 2.4rem;
---fontSize-body-2: 1.6rem;
---fontSize-body-3: 1.8rem;
---fontSize-body-4: 1.6rem;
---fontSize-label-1: 1.4rem;
---fontSize-label-2: 1.2rem;
-
---weight-regular: 400;
---weight-bold: 700;
-
---lineHeight-1: 1em;
---lineHeight-2: 1.2em;
---lineHeight-3: 1.5em;
---lineHeight-4: 1.6em;
---lineHeight-5: 1.85em;
---lineHeight-6: 1.4em;
-
---letterSpacing-1: 0.15em;
---letterSpacing-2: 0.4em;
---letterSpacing-3: 0.2em;
---letterSpacing-4: 0.3em;
---letterSpacing-5: 3px;
-
---section-space: 70px;
-
---shadow-1: 0px 0px 25px 0px hsla(0, 0%, 0%, 0.25);
-
---radius-24: 24px;
---radius-circle: 50%;
-
---transition-1: 250ms ease;
---transition-2: 500ms ease;
---transition-3: 1000ms ease;
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(../images/elementor-placeholder-image.png);
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 50px;
+}
+
+.menu-icon{
+  cursor: pointer;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-icon .line {
+  width: 35px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: right 0.4s ease;
+}
+
+.menu-overlay.open {
+  right: 0;
+}
+
+.close-icon {
+  display: none;
+}
+
+.menu-overlay.open ~ .menu-icon {
+  display: none;
+}
+
+.menu-overlay.open ~ .close-icon {
+  display: flex;
+}
+
+.menu-overlay ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-overlay ul li {
+  margin: 15px 0;
+}
+
+.menu-overlay ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+.reservation-botton{
+  display: inline-block;
+  margin: 30px;
+}
+.reservation {
+    position: absolute;
+    right: 2rem;
+    font-size: 20px;
+    transform: translateY(-50%);
+    margin-top: 50px;
+}
+ .restaurant{
+  padding-top: 170px;
+  font-size: 100px;
+  text-align: center;
+  margin-bottom: 0px;
+ 
+
+} .location{
+ text-align: center;
+ font-size:30px;
+ margin: 0%;
+}
+.star{
+  width: 240px;
+  margin-left: 42%;
+  margin-top: 1%;
+}

@@ -1,34 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <title>LA JARDIN</title>
-        <meta name="title =" content="LA Jardin">
-        
-        <!--Restaurant Logo--> 
-        <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Jardin</title>
+    <link rel="stylesheet" href="lajardin.css">
+    
+</head>
+<body>
+    <div class="navbar">
+     <div class="menu-icon" onclick="toggleMenu()">
+          <div class="line"></div>
+         <div class="line"></div>
+         <div class="line"></div>
+         </div>
 
-        <!--Font--> 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+         <div class="close-icon" onclick="toggleMenu()">&times;</div>
+      
+         <div class="menu-overlay" id="menuOverlay">
+         <ul>
+             <li><a href="2.menu.html">MENU</a></li>
+             <li><a href="3.chef.html">CHEF PROFILE</a></li>
+             <li><a href="4.jardin-prive.html">JARDIN PRIVE</a></li>
+             <li><a href="5.seasonal.html">SEASONAL</a></li>
+             <li><a href="6.about.html">ABOUT</a></li>
+         </ul>
+         </div>
 
-        <link rel="stylesheet" href="lajardin.css">
+         <script>
+             function toggleMenu() {
+             const menu = document.getElementById('menuOverlay');
+             menu.classList.toggle('open');
+             }
+         </script>
 
-         <!--Preload Images--> 
-         <link rel="preload" as="image" href="">
-         <link rel="preload" as="image" href="">
-    </head>
+         <div class="logo">LA JARDIN</div>
 
-    <body>
-         <!--js link--> 
-         <script src="lajardin.js"></script>
+         <div class="reservation">
+             <a href="7.reservation-form.html" class="reservation-button">Reservation</a>
+         </div>
+      </div>
+   </div>
 
-         <!--ionic link--> 
-         <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    </body>
-</html>
+    <div class="page-content">
+        <h1 class="restaurant">
+            LA JARDIN
+        </h1>
+        <h5 class="location">
+            Aukland, New Zealand 
+        </h5>
+        <img class="star" src="images/Etoile_Michelin-3.svg.png">
+    </div>
+</body>
