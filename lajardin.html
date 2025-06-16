@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Jardin</title>
     <link rel="stylesheet" href="lajardin.css">
-    
+
 </head>
 <body>
     <div class="navbar">
      <div class="menu-icon" onclick="toggleMenu()">
-          <div class="line"></div>
+         <div class="line"></div>
          <div class="line"></div>
          <div class="line"></div>
          </div>
@@ -28,18 +28,16 @@
          </ul>
          </div>
 
+         <img class="logo" src="images/logo.png">
+
+         <button class="reservation"> RESERVATION </button>
+
          <script>
-             function toggleMenu() {
-             const menu = document.getElementById('menuOverlay');
-             menu.classList.toggle('open');
-             }
+              function toggleMenu() {
+              const menu = document.getElementById('menuOverlay');
+               menu.classList.toggle('open');
+               }
          </script>
-
-         <div class="logo">LA JARDIN</div>
-
-         <div class="reservation">
-             <a href="7.reservation-form.html" class="reservation-button">Reservation</a>
-         </div>
       </div>
    </div>
 
@@ -50,6 +48,11 @@
         <h5 class="location">
             Aukland, New Zealand 
         </h5>
-        <img class="star" src="images/Etoile_Michelin-3.svg.png">
+        <img class="star" src="images/stars.png">
+    </div>
+
+    <div class="slide_wrapper" id="block_id_2">
+        <div class="slide_container" style="background-image:url(images/page2.jpg);">
+        </div>
     </div>
 </body>

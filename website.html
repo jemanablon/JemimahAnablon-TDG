@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title> Restaurant  La Jardin </title>
+        <link rel="preload" as="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CVarela%20Round%7CHind%20Siliguri%3A400%2C600%7CDosis%3A600%7CRoboto%3A100%2C400%7CRoboto%20Condensed%3A400%2C700%7CBree%20Serif%7CDroid%20Serif%3A400%7CMuli%3A700&display=swap "> 
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CVarela%20Round%7CHind%20Siliguri%3A400%2C600%7CDosis%3A600%7CRoboto%3A100%2C400%7CRoboto%20Condensed%3A400%2C700%7CBree%20Serif%7CDroid%20Serif%3A400%7CMuli%3A700&amp;display=swap" media="all" onload="this.media='all'">
+        <noscript>
+            "<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat%3A400%2C700%7CVarela%20Round%7CHind%20Siliguri%3A400%2C600%7CDosis%3A600%7CRoboto%3A100%2C400%7CRoboto%20Condensed%3A400%2C700%7CBree%20Serif%7CDroid%20Serif%3A400%7CMuli%3A700&#038;display=swap" />" == $0
+        </noscript>
+        <meta name="robots" content="max-image-preview:large"> 
+        <style>
+         img:is([sizes="auto" i], [sizes^="auto," i]) {contain-intrinsic-size: 3000px 1500px}
+        </style>
+        <style>
+
+/**************************************************************
+*** CUSTOM COLORS + SETTINGS
+**************************************************************/
+/* show hovers on non-touch devices only */
+/* menu label */
+.taptap-menu-button-wrapper:hover .taptap-menu-button-label { color:; }
+/* logo hover */
+.taptap-logo a:hover { color:; }
+/* search label hover */
+.taptap-search-button-wrapper:hover .taptap-search-button-label { color:; }
+/* search button hover*/
+.taptap-search-button-wrapper:hover .taptap-search-button { border-color:#ddd; }
+.taptap-search-button-wrapper:hover .taptap-search-button::after { background-color:#ddd; }
+/* search close button hover */
+.taptap-search-close-wrapper:hover .taptap-search-close-inner::before,
+.taptap-search-close-wrapper:hover .taptap-search-close-inner::after { background-color:#ddd; }
+/* search clear field button hover */
+.taptap-search-clear-wrapper:hover .taptap-search-clear { background-color:#666; }
+/* current menu item hover */
+.taptap-by-bonfire ul li.current-menu-item.full-item-arrow-hover > a,
+.taptap-by-bonfire ul li.current-menu-item > a:hover { color:; }
+/* current submenu item hover */
+.taptap-by-bonfire .sub-menu .current-menu-item.full-item-arrow-hover > a,
+.taptap-by-bonfire .sub-menu .current-menu-item > a:hover { color:; }
+/* menu item icon hover */
+.taptap-by-bonfire ul li a:hover i,
+.taptap-by-bonfire ul li.full-item-arrow-hover a i { color:; }
+/* submenu item icon hover */
+.taptap-by-bonfire .sub-menu a:hover i,
+.taptap-by-bonfire .sub-menu .full-item-arrow-hover a i { color:; }
+/* menu item hovers */
+.taptap-by-bonfire ul li.full-item-arrow-hover > a,
+.taptap-by-bonfire ul li a:hover { color:#eaeaea; }
+.taptap-by-bonfire ul.sub-menu li.full-item-arrow-hover > a,
+.taptap-by-bonfire ul.sub-menu li a:hover { color:#77787C; }
+/* submenu arrow hover */
+.full-item-arrow-hover > .taptap-sub-arrow .taptap-sub-arrow-inner::before,
+.full-item-arrow-hover > .taptap-sub-arrow .taptap-sub-arrow-inner::after,
+.taptap-sub-arrow:hover .taptap-sub-arrow-inner::before,
+.taptap-sub-arrow:hover .taptap-sub-arrow-inner::after { background-color:#fff; }
+/* menu button hover */
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button:before,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button div.taptap-main-menu-button-middle:before,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button:after,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-two:before,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-two div.taptap-main-menu-button-two-middle:before,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-two:after,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-three:before,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-three div.taptap-main-menu-button-three-middle:before,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-three:after,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-four:before,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-four div.taptap-main-menu-button-four-middle:before,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-four:after,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-five:before,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-five div.taptap-main-menu-button-five-middle:before,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-five:after,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-six:before,
+.taptap-menu-button-wrapper:hover .taptap-main-menu-button-six:after {
+    background-color:#ddd;
+}
+/* menu bars hover (if menu opened) */
+.taptap-menu-active:hover .taptap-main-menu-button:before,
+.taptap-menu-active:hover .taptap-main-menu-button div.taptap-main-menu-button-middle:before,
+.taptap-menu-active:hover .taptap-main-menu-button:after,
+.taptap-menu-active:hover .taptap-main-menu-button-two:before,
+.taptap-menu-active:hover .taptap-main-menu-button-two div.taptap-main-menu-button-two-middle:before,
+.taptap-menu-active:hover .taptap-main-menu-button-two:after,
+.taptap-menu-active:hover .taptap-main-menu-button-three:before,
+.taptap-menu-active:hover .taptap-main-menu-button-three div.taptap-main-menu-button-three-middle:before,
+.taptap-menu-active:hover .taptap-main-menu-button-three:after,
+.taptap-menu-active:hover .taptap-main-menu-button-four:before,
+.taptap-menu-active:hover .taptap-main-menu-button-four div.taptap-main-menu-button-four-middle:before,
+.taptap-menu-active:hover .taptap-main-menu-button-four:after,
+.taptap-menu-active:hover .taptap-main-menu-button-five:before,
+.taptap-menu-active:hover .taptap-main-menu-button-five div.taptap-main-menu-button-five-middle:before,
+.taptap-menu-active:hover .taptap-main-menu-button-five:after,
+.taptap-menu-active:hover .taptap-main-menu-button-six:before,
+.taptap-menu-active:hover .taptap-main-menu-button-six:after {
+    background-color:;
+}        
+
+/* MENU BUTTON */
+/* menu button opacity */
+.taptap-menu-button-wrapper { opacity:; }
+/* menu button */
+.taptap-main-menu-button:before,
+.taptap-main-menu-button div.taptap-main-menu-button-middle:before,
+.taptap-main-menu-button:after,
+.taptap-main-menu-button-two:before,
+.taptap-main-menu-button-two div.taptap-main-menu-button-two-middle:before,
+.taptap-main-menu-button-two:after,
+.taptap-main-menu-button-three:before,
+.taptap-main-menu-button-three div.taptap-main-menu-button-three-middle:before,
+.taptap-main-menu-button-three:after,
+.taptap-main-menu-button-four:before,
+.taptap-main-menu-button-four div.taptap-main-menu-button-four-middle:before,
+.taptap-main-menu-button-four:after,
+.taptap-main-menu-button-five:before,
+.taptap-main-menu-button-five div.taptap-main-menu-button-five-middle:before,
+.taptap-main-menu-button-five:after,
+.taptap-main-menu-button-six:before,
+.taptap-main-menu-button-six:after {
+    background-color:;
+    }
+/* menu button (if menu opened) */
+.taptap-menu-active .taptap-main-menu-button:before,
+.taptap-menu-active .taptap-main-menu-button div.taptap-main-menu-button-middle:before,
+.taptap-menu-active .taptap-main-menu-button:after,
+.taptap-menu-active .taptap-main-menu-button-two:before,
+.taptap-menu-active .taptap-main-menu-button-two div.taptap-main-menu-button-two-middle:before,
+.taptap-menu-active .taptap-main-menu-button-two:after,
+.taptap-menu-active .taptap-main-menu-button-three:before,
+.taptap-menu-active .taptap-main-menu-button-three div.taptap-main-menu-button-three-middle:before,
+.taptap-menu-active .taptap-main-menu-button-three:after,
+.taptap-menu-active .taptap-main-menu-button-four:before,
+.taptap-menu-active .taptap-main-menu-button-four div.taptap-main-menu-button-four-middle:before,
+.taptap-menu-active .taptap-main-menu-button-four:after,
+.taptap-menu-active .taptap-main-menu-button-five:before,
+.taptap-menu-active .taptap-main-menu-button-five div.taptap-main-menu-button-five-middle:before,
+.taptap-menu-active .taptap-main-menu-button-five:after,
+.taptap-menu-active .taptap-main-menu-button-six:before,
+.taptap-menu-active .taptap-main-menu-button-six:after { background-color:; }
+/* menu button animations (-/X) */
+/* X SIGN ANIMATION */
+    /* button style #1 top bar*/
+    .taptap-menu-active .taptap-main-menu-button:before {
+        transform:translateY(9px) rotate(45deg);
+        -moz-transform:translateY(9px) rotate(45deg);
+        -webkit-transform:translateY(9px) rotate(45deg);
+    }
+    /* button style #1 bottom bar*/
+    .taptap-menu-active .taptap-main-menu-button:after {
+        transform:translateY(-9px) rotate(-45deg);
+        -moz-transform:translateY(-9px) rotate(-45deg);
+        -webkit-transform:translateY(-9px) rotate(-45deg);
+    }
+    /* button style #1 middle bar*/
+    .taptap-menu-active div.taptap-main-menu-button-middle:before {
+        opacity:0;
+        pointer-events:none;
+        
+        -webkit-transform:translateX(-20px);
+        -moz-transform:translateX(-20px);
+        transform:translateX(-20px);
+        
+        -webkit-transition:all .25s ease, opacity .25s ease .025s;
+        -moz-transition:all .25s ease, opacity .25s ease .025s;
+        transition:all .25s ease, opacity .25s ease .025s;
+    }
+    /* button style #2 top bar*/
+    .taptap-menu-active .taptap-main-menu-button-two:before {
+        transform:translateY(9px) rotate(45deg);
+        -moz-transform:translateY(9px) rotate(45deg);
+        -webkit-transform:translateY(9px) rotate(45deg);
+    }
+    .taptap-menu-active .taptap-main-menu-button-two:hover:before { width:30px; }
+    /* button style #2 bottom bar*/
+    .taptap-menu-active .taptap-main-menu-button-two:after {
+        width:30px;
+        margin-left:0;
+        transform:translateY(-9px) rotate(-45deg);
+        -moz-transform:translateY(-9px) rotate(-45deg);
+        -webkit-transform:translateY(-9px) rotate(-45deg);
+    }
+    /* button style #2 middle bar*/
+    .taptap-menu-active div.taptap-main-menu-button-two-middle:before {
+        opacity:0;
+        pointer-events:none;
+        
+        -webkit-transform:translateX(-20px);
+        -moz-transform:translateX(-20px);
+        transform:translateX(-20px);
+        
+        -webkit-transition:all .25s ease, opacity .25s ease .025s;
+        -moz-transition:all .25s ease, opacity .25s ease .025s;
+        transition:all .25s ease, opacity .25s ease .025s;
+    }
+    /* button style #3 top bar*/
+    .taptap-menu-active .taptap-main-menu-button-three:before {
+        transform:translateY(9px) rotate(45deg);
+        -moz-transform:translateY(9px) rotate(45deg);
+        -webkit-transform:translateY(9px) rotate(45deg);
+    }
+    /* button style #3 bottom bar*/
+    .taptap-menu-active .taptap-main-menu-button-three:after {
+        transform:translateY(-9px) rotate(-45deg);
+        -moz-transform:translateY(-9px) rotate(-45deg);
+        -webkit-transform:translateY(-9px) rotate(-45deg);
+    }
+    /* button style #3 middle bar*/
+    .taptap-menu-active div.taptap-main-menu-button-three-middle:before {
+        opacity:0;
+        pointer-events:none;
+        
+        -webkit-transform:translateX(-20px);
+        -moz-transform:translateX(-20px);
+        transform:translateX(-20px);
+        
+        -webkit-transition:all .25s ease, opacity .25s ease .025s;
+        -moz-transition:all .25s ease, opacity .25s ease .025s;
+        transition:all .25s ease, opacity .25s ease .025s;
+    }
+    /* button style #4 top bar*/
+    .taptap-menu-active .taptap-main-menu-button-four:before {
+        transform:translateY(9px) rotate(45deg);
+        -moz-transform:translateY(9px) rotate(45deg);
+        -webkit-transform:translateY(9px) rotate(45deg);
+    }
+    .taptap-menu-active .taptap-main-menu-button-four:hover:before { width:25px; }
+    /* button style #4 bottom bar*/
+    .taptap-menu-active .taptap-main-menu-button-four:after {
+        width:25px;
+        transform:translateY(-9px) rotate(-45deg);
+        -moz-transform:translateY(-9px) rotate(-45deg);
+        -webkit-transform:translateY(-9px) rotate(-45deg);
+    }
+    /* button style #4 middle bar*/
+    .taptap-menu-active div.taptap-main-menu-button-four-middle:before {
+        opacity:0;
+        pointer-events:none;
+        
+        -webkit-transform:translateX(-20px);
+        -moz-transform:translateX(-20px);
+        transform:translateX(-20px);
+        
+        -webkit-transition:all .25s ease, opacity .25s ease .025s;
+        -moz-transition:all .25s ease, opacity .25s ease .025s;
+        transition:all .25s ease, opacity .25s ease .025s;
+    }
+    /* button style #5 top bar*/
+    .taptap-menu-active .taptap-main-menu-button-five:before {
+        transform:translateY(11px) rotate(45deg);
+        -moz-transform:translateY(11px) rotate(45deg);
+        -webkit-transform:translateY(11px) rotate(45deg);
+    }
+    /* button style #5 bottom bar*/
+    .taptap-menu-active .taptap-main-menu-button-five:after {
+        transform:translateY(-11px) rotate(-45deg);
+        -moz-transform:translateY(-11px) rotate(-45deg);
+        -webkit-transform:translateY(-11px) rotate(-45deg);
+    }
+    /* button style #5 middle bar*/
+    .taptap-menu-active div.taptap-main-menu-button-five-middle:before {
+        opacity:0;
+        pointer-events:none;
+        
+        -webkit-transform:translateX(-20px);
+        -moz-transform:translateX(-20px);
+        transform:translateX(-20px);
+        
+        -webkit-transition:all .25s ease, opacity .25s ease .025s;
+        -moz-transition:all .25s ease, opacity .25s ease .025s;
+        transition:all .25s ease, opacity .25s ease .025s;
+    }
+    /* button style #6 top bar*/
+    .taptap-menu-active .taptap-main-menu-button-six:before {
+        transform:translateY(4px) rotate(45deg);
+        -moz-transform:translateY(4px) rotate(45deg);
+        -webkit-transform:translateY(4px) rotate(45deg);
+    }
+    /* button style #6 bottom bar*/
+    .taptap-menu-active .taptap-main-menu-button-six:after {
+        transform:translateY(-4px) rotate(-45deg);
+        -moz-transform:translateY(-4px) rotate(-45deg);
+        -webkit-transform:translateY(-4px) rotate(-45deg);
+    }
+/* menu button animation speed + logo/search hover speeds */
+.taptap-menu-button-label::before,
+.taptap-menu-button-label::after,
+.taptap-search-button-label,
+.taptap-search-button,
+.taptap-search-button::after,
+.taptap-logo a,
+.taptap-search-close-inner::before,
+.taptap-search-close-inner::after,
+.taptap-search-clear,
+.taptap-main-menu-button:before,
+.taptap-main-menu-button div.taptap-main-menu-button-middle:before,
+.taptap-main-menu-button:after,
+.taptap-main-menu-button-two:before,
+.taptap-main-menu-button-two div.taptap-main-menu-button-two-middle:before,
+.taptap-main-menu-button-two:after,
+.taptap-main-menu-button-three:before,
+.taptap-main-menu-button-three div.taptap-main-menu-button-three-middle:before,
+.taptap-main-menu-button-three:after,
+.taptap-main-menu-button-four:before,
+.taptap-main-menu-button-four div.taptap-main-menu-button-four-middle:before,
+.taptap-main-menu-button-four:after,
+.taptap-main-menu-button-five:before,
+.taptap-main-menu-button-five div.taptap-main-menu-button-five-middle:before,
+.taptap-main-menu-button-five:after,
+.taptap-main-menu-button-six:before,
+.taptap-main-menu-button-six:after {
+    -webkit-transition:all s ease !important;
+    -moz-transition:all s ease !important;
+    transition:all s ease !important;
+}
+/* menu button top, side distances + right position */
+.taptap-menu-button-wrapper { top:31px; }
+/* if menu button hidden, remove button height and set default label position to 0 */
+/* menu button label customization */
+.taptap-menu-button-label {
+    left:px;
+    top:px;
+    color:;
+    font-size:px;
+    letter-spacing:px;
+}
+/* menu button label font + theme font */
+    /* menu button labels */
+.taptap-menu-button-label::before { content:''; }
+
+/* LOGO */
+/* logo font size + letter spacing */
+.taptap-logo a {
+    color:;
+    font-size:px;
+    letter-spacing:px;
+}
+/* logo font + theme font */
+    /* logo image size + top/side distances + right positioning */
+.taptap-logo-image img { max-height:50px; }
+.taptap-logo-wrapper { top:35px; }
+
+
+
+
+
+
+/* WOO BUTTON */
+/* woocommerce icon select */
+/* woocommerce icon colors */
+.taptap-shopping-icon {
+    background-color:;
+}
+a.taptap-cart-count:hover .taptap-shopping-icon {
+    background-color:;
+}
+.taptap-cart-count > span {
+    color:;
+    background-color:;
+}
+/* woo button top, side distances + right position */
+.taptap-woo-button-wrapper { top:px; }
+
+/* SEARCH */
+/* search button */
+.taptap-search-button {
+    border-color:;
+        }
+.taptap-search-button::after {
+    background-color:;
+    }
+/* search button top, side distances + right position */
+.taptap-search-button-wrapper { top:px; }
+/* if search button hidden, remove button height and set default label position to 0 */
+.taptap-search-button-wrapper { height:auto; }
+.taptap-search-button-label { top:0; left:0; }
+/* search button label customization */
+.taptap-search-button-label {
+    left:px;
+    top:px;
+    color:;
+    font-size:px;
+    letter-spacing:px;
+}
+/* search button label font + theme font */
+    /* search form background + background color + animation speed */
+.taptap-search-wrapper,
+.taptap-search-background {
+    height:px;
+    
+    -webkit-transition:-webkit-transform s ease 0s, top 0s ease s;
+    -moz-transition:-moz-transform s ease 0s, top 0s ease s;
+    transition:transform s ease 0s, top 0s ease s;
+}
+.taptap-search-background {
+    opacity:;
+    background-color:;
+}
+.taptap-search-wrapper-active {
+    -webkit-transition:-webkit-transform s ease 0s, top 0s ease 0s !important;
+    -moz-transition:-moz-transform s ease 0s, top 0s ease 0s !important;
+    transition:transform s ease 0s, top 0s ease 0s !important;
+}
+.taptap-search-overlay {
+    background-color:;
+    -webkit-transition:opacity s ease 0s, top 0s ease s;
+    -moz-transition:opacity s ease 0s, top 0s ease s;
+    transition:opacity s ease 0s, top 0s ease s;
+}
+.taptap-search-overlay-active {
+    opacity:;
+    -webkit-transition:opacity s ease 0s, top 0s ease 0s;
+    -moz-transition:opacity s ease 0s, top 0s ease 0s;
+    transition:opacity s ease 0s, top 0s ease 0s;
+}
+/* search form placeholder */
+#searchform input::-webkit-input-placeholder { font-size:px; color: !important; }
+#searchform input:-moz-placeholder { font-size:px; color: !important; }
+#searchform input::-moz-placeholder { font-size:px; color: !important; }
+#searchform input:-ms-input-placeholder { font-size:px; color: !important; }
+/* search form text color + align + padding if clear field hidden */
+.taptap-search-wrapper #searchform input {
+    color:;
+    font-size:px;
+    letter-spacing:px;
+        }
+/* search field font */
+    /* search form close button */
+.taptap-search-close-inner::before,
+.taptap-search-close-inner::after { background-color:; }
+/* search clear field button */
+.taptap-search-clear { background-color:; }
+/* make search field X the same color as search field background */
+.taptap-search-clear::before,
+.taptap-search-clear::after { background-color:; }
+
+/* HEADER */
+/* header height + background image + background color */
+.taptap-header-bg-image {
+    height:px;
+    opacity:;
+    background-image:url();
+
+    }
+.taptap-header {
+    height:px;
+    background-color:;
+    opacity:;
+}
+/* show header shadow */
+
+/* MENU CONTAINER */
+/* background color */
+.taptap-background-color {
+    opacity:;
+    background-color:#0b1330;
+}
+/* pulsating background colors + speed */
+/* background image opacity + horizontal/vertical alignment */
+.taptap-background-image {
+    opacity:;
+    background-position: ;
+    background-size:;
+}
+/* background pattern */
+/* menu container top/bottom padding */
+.taptap-main-inner-inner {
+    padding-top:px;
+    padding-bottom:px;
+    padding-left:px;
+    padding-right:px;
+}
+/* max content width */
+.taptap-contents-wrapper {
+    max-width:px;
+}
+/* menu container appearance speed */
+.taptap-main-wrapper {
+    -webkit-transition:-webkit-transform s ease, top 0s ease s, opacity s ease 0s;
+    -moz-transition:-moz-transform s ease, top 0s ease s, opacity s ease 0s;
+    transition:transform s ease, top 0s ease s, opacity s ease 0s;
+}
+.taptap-main-wrapper-active {
+    -webkit-transition:-webkit-transform s ease, top 0s ease 0s, opacity s ease 0s;
+    -moz-transition:-moz-transform s ease, top 0s ease 0s, opacity s ease 0s;
+    transition:transform s ease, top 0s ease 0s, opacity s ease 0s;
+}
+.taptap-background-color,
+.taptap-background-image {
+    -webkit-transition:-webkit-transform s ease, top 0s ease s;
+    -moz-transition:-moz-transform s ease, top 0s ease s;
+    transition:transform s ease, top 0s ease s;
+}
+.taptap-background-color-active,
+.taptap-background-image-active {
+    -webkit-transition:-webkit-transform s ease, top 0s ease 0s;
+    -moz-transition:-moz-transform s ease, top 0s ease 0s;
+    transition:transform s ease, top 0s ease 0s;
+}
+/* menu corner roundness */
+.taptap-background-color,
+.taptap-background-image,
+.taptap-main-wrapper {
+	border-radius:px;
+}
+/* distance from edges */
+/* menu contents horizontal alignment */
+/* menu contents vertical alignment */
+/* menu animations (top/left/right/bottom/fade) */
+.taptap-main-wrapper {
+    -webkit-transform:translateY(-125%) scale(1);
+    -moz-transform:translateY(-125%) scale(1);
+    transform:translateY(-125%) scale(1);
+}
+.taptap-main-wrapper-active {
+    -webkit-transform:translateY(0) scale(1);
+    -moz-transform:translateY(0) scale(1);
+    transform:translateY(0) scale(1);
+}
+    .taptap-main-wrapper {
+        -webkit-transform:translateY(0) translateX(-125%) scale(1);
+        -moz-transform:translateY(0) translateX(-125%) scale(1);
+        transform:translateY(0) translateX(-125%) scale(1);
+    }
+    .taptap-background-color,
+    .taptap-background-image {
+        -webkit-transform:translateY(0) translateX(-320px) ;
+        -moz-transform:translateY(0) translateX(-320px) ;
+        transform:translateY(0) translateX(-320px) ;
+    }
+    .taptap-main-wrapper-active,
+    .taptap-background-color-active,
+    .taptap-background-image-active {
+        -webkit-transform:translateY(0) translateX(0) scale(1);
+        -moz-transform:translateY(0) translateX(0) scale(1);
+        transform:translateY(0) translateX(0) scale(1);
+    }
+ 
+    .taptap-background-color,
+    .taptap-background-image,
+    .taptap-main-wrapper {
+        max-width:320px;
+    }
+
+.taptap-background-overlay {
+    background-color;
+    
+    -webkit-transition:opacity s ease, top 0s ease s;
+    -moz-transition:opacity s ease, top 0s ease s;
+    transition:opacity s ease, top 0s ease s;
+}
+.taptap-background-overlay-active {
+    opacity:;
+    
+    -webkit-transition:opacity s ease, top 0s ease 0s;
+    -moz-transition:opacity s ease, top 0s ease 0s;
+    transition:opacity s ease, top 0s ease 0s;
+}
+
+/* ALTERNATE CLOSE BUTTON */
+.taptap-alternate-close-button {
+        top:px;
+            right:px;
+    }
+.taptap-alternate-close-button::before,
+.taptap-alternate-close-button::after {
+    background-color:;
+    height:px;
+}
+.taptap-alternate-close-button:hover::before,
+.taptap-alternate-close-button:hover::after {
+    background-color:;
+}
+
+/* HEADING + SUBHEADING */
+/* headings */
+.taptap-heading,
+.taptap-heading a,
+.taptap-heading a:hover { color:; }
+.taptap-subheading,
+.taptap-subheading a,
+.taptap-subheading a:hover { color:; }
+/* heading */
+.taptap-heading,
+.taptap-heading a {
+    font-size:px;
+    letter-spacing:px;
+    line-height:px;
+}
+/* subheading */
+.taptap-subheading {
+    margin-top:px;
+}
+.taptap-subheading,
+.taptap-subheading a {
+    font-size:px;
+    letter-spacing:px;
+    line-height:px;
+}
+/* heading font */
+    
+/* subheading font */
+    
+/* HEADING IMAGE */
+.taptap-image {
+    margin-top:px;
+    margin-bottom:px;
+}
+.taptap-image img {
+    max-width:px;
+}
+
+/* MENUS */
+/* menu */
+.taptap-by-bonfire ul li a {
+    color:#ffffff;
+    font-size:14px;
+    line-height:14px;
+    letter-spacing:2px;
+    margin-top:px;
+}
+.taptap-by-bonfire > .menu > li.menu-item-has-children > span { margin-top:px; }
+/* submenu */
+.taptap-by-bonfire .sub-menu a {
+    color:;
+    font-size:px;
+    letter-spacing:px;
+    margin-bottom:px;
+}
+/* drop-down arrow position (top-level) */
+.taptap-by-bonfire > .menu > li.menu-item-has-children > span { top:px; }
+/* drop-down arrow position (sub-level) */
+.taptap-by-bonfire .sub-menu li.menu-item-has-children span { top:px; }
+/* submenu arrow */
+.taptap-sub-arrow .taptap-sub-arrow-inner::before,
+.taptap-sub-arrow .taptap-sub-arrow-inner::after { background-color:; }
+.taptap-by-bonfire .menu li span { border-color:; }
+/* current menu items */
+.taptap-by-bonfire ul li.current-menu-item > a { color:; }
+.taptap-by-bonfire .sub-menu .current-menu-item > a { color:; }
+/* menu font */
+    .taptap-by-bonfire ul li a {
+        font-family:'Museo Sans 700';
+    }
+
+/* MENU ITEM DESCRIPTIONS */
+.taptap-menu-item-description {
+    color:;
+    font-size:px;
+    padding-top:px;
+    padding-bottom:px;
+    line-height:px;
+    letter-spacing:px;
+}
+    /* menu item description font */
+    
+/* MENU ITEM ICONS */
+/* menu icons */
+.taptap-by-bonfire ul li a i {
+    color:;
+    font-size:px;
+    margin-top:px;
+}
+/* submenu icons */
+.taptap-by-bonfire .sub-menu a i {
+    color:;
+    font-size:px;
+    margin-top:px;
+}
+
+/* IMAGE-BASED MENU */
+/* image-based menu item colors */
+.taptap-image-grid-item > a { color:; }
+.taptap-by-bonfire-image .sub-menu li a { color:; }
+.taptap-by-bonfire-image .sub-menu li a:hover { color:; }
+/* image-based drop-down indicator colors */
+.taptap-by-bonfire-image .taptap-image-sub-arrow-inner::before,
+.taptap-by-bonfire-image .taptap-image-sub-arrow-inner::after { background-color:; }
+.taptap-by-bonfire-image .taptap-image-sub-arrow { background:; }
+/* image-based sub-menu drop-down indicator colors */
+.taptap-by-bonfire-image .sub-menu .taptap-image-sub-arrow-inner::before,
+.taptap-by-bonfire-image .sub-menu .taptap-image-sub-arrow-inner::after { background-color:; }
+.taptap-by-bonfire-image .sub-menu .taptap-image-sub-arrow { background:; }
+.taptap-by-bonfire-image .sub-menu span.taptap-submenu-active { border-color:; }
+/* image-based scrollbar color */
+.taptap-image-grid-item > .scroll-element .scroll-bar { background-color:; }
+/* image-based background color */
+.taptap-image-grid-item { background:; }
+.taptap-image-grid-item > ul::before {
+	background:;
+	background:linear-gradient(180deg, rgba(30,30,30,0) 25%,  100%,  100%);
+}
+/* image-based menu animation origin */
+.taptap-by-bonfire-image > ul > li {
+	opacity:0;
+	-webkit-transform:translateY(125px);
+	-moz-transform:translateY(125px);
+	transform:translateY(125px);
+}
+/* image-based menu corner roundness */
+.taptap-image-grid-item,
+.taptap-image-grid-item > a:before {
+    border-radius:px;
+}
+/* image-based menu item gap */
+.taptap-by-bonfire-image > ul {
+    grid-gap:px;
+}
+/* image-based menu images */
+.taptap-by-bonfire-image > ul > li:first-child .taptap-image-grid-item > a:before {
+	background-image:url();
+}
+.taptap-by-bonfire-image > ul > li:nth-child(2) .taptap-image-grid-item > a:before {
+	background-image:url();
+}
+.taptap-by-bonfire-image > ul > li:nth-child(3) .taptap-image-grid-item > a:before {
+	background-image:url();
+}
+.taptap-by-bonfire-image > ul > li:nth-child(4) .taptap-image-grid-item > a:before {
+	background-image:url();
+}
+.taptap-by-bonfire-image > ul > li:nth-child(5) .taptap-image-grid-item > a:before {
+	background-image:url();
+}
+.taptap-by-bonfire-image > ul > li:nth-child(6) .taptap-image-grid-item > a:before {
+	background-image:url();
+}
+.taptap-by-bonfire-image > ul > li:nth-child(7) .taptap-image-grid-item > a:before {
+	background-image:url();
+}
+.taptap-by-bonfire-image > ul > li:nth-child(8) .taptap-image-grid-item > a:before {
+	background-image:url();
+}
+.taptap-by-bonfire-image > ul > li:nth-child(9) .taptap-image-grid-item > a:before {
+	background-image:url();
+}
+
+/* WIDGETS */
+/* widget top distance */
+.taptap-widgets-wrapper { margin-top:px; }
+/* widget titles */
+.taptap-widgets-wrapper .widget .widgettitle {
+    color:;
+    font-size:px;
+    letter-spacing:px;
+    line-height:px;
+}
+/* widget title font */
+    /* widgets */
+.taptap-widgets-wrapper .widget,
+.taptap-widgets-wrapper .widget a {
+    color:;
+    font-size:px;
+    letter-spacing:px;
+    line-height:px;
+}
+.taptap-widgets-wrapper .widget a {
+    color:;
+}
+.taptap-widgets-wrapper .widget a:hover {
+    color:;
+}
+/* widget font */
+    
+/* STYLED SCROLLBAR */
+/* show scrollbar styling, if scrollbar enabled */
+
+/* MENU ITEMS APPEARACE ANIMATION */
+
+/* MISC */
+/* show header + search when menu open */
+/* push down site by height of menu */
+/* if submenu arrow divider is hidden */
+
+        </style>
+    </head>
+    <body>
+    </body>
+</html>

@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-image: url(../images/elementor-placeholder-image.png);
+  background-image: url(images/homepage.jpg)
 }
 
 .navbar {
@@ -11,13 +11,38 @@ body {
     padding: 1rem;
 }
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
 .logo {
-    font-size: 30px;
-    font-weight: bold;
+    width: 15%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 50px;
+    vertical-align: middle;
+    margin-top: 5%;
+  
+}
+.reservation{
+  display: inline-block;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  overflow: visible;
+  box-sizing: border-box;
+  cursor: pointer;
+  margin: -60px;
+  margin-right: 10px;
+  margin-top: 50px;
+  padding: 15px 30px;
+  transform: translateY(-50%);
+  right: 2rem;
+  position: absolute;
 }
 
 .menu-icon{
@@ -26,18 +51,18 @@ body {
   top: 20px;
   left: 20px;
   z-index: 1000;
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .menu-icon .line {
-  width: 35px;
-  height: 3px;
-  background-color: #000000;
-  margin: 5px 0;
-  transition: all 0.3s ease;
+  width: 37px;
+  height: 2px;
+  background-color: #999;
+  margin: 7px 0px;
+  transition: all 0.25s ease;
+  display: block;
 }
 
 .menu-overlay {
@@ -85,31 +110,30 @@ body {
   text-decoration: none;
   font-size: 24px;
 }
-.reservation-botton{
-  display: inline-block;
-  margin: 30px;
-}
-.reservation {
-    position: absolute;
-    right: 2rem;
-    font-size: 20px;
-    transform: translateY(-50%);
-    margin-top: 50px;
-}
+
  .restaurant{
   padding-top: 170px;
-  font-size: 100px;
-  text-align: center;
   margin-bottom: 0px;
- 
-
-} .location{
+  font-size: 70px;
+  text-align: center;
+  vertical-align: baseline;
+  color: white;
+}
+ .location{
  text-align: center;
  font-size:30px;
- margin: 0%;
+ color: #fff;
+ margin: 0px
 }
 .star{
-  width: 240px;
-  margin-left: 42%;
-  margin-top: 1%;
+  display: block;
+  height: auto;
+  vertical-align: baseline;
+  margin: 10px auto 15px auto; 
+  max-width: 180px;
+  overflow: clip;
 }
+
+
+
+
